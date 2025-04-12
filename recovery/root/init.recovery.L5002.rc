@@ -1,0 +1,5 @@
+#add for board init.rc for recovery mode
+
+on property:ro.bootmode=factorytest
+    insmod vendor/lib/modules/ft6336u.ko
+    insmod vendor/lib/modules/tlsc6x.ko
